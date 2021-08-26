@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <title>切水果</title>
+</head>
+
+<body>
+    <!-- fullPage 起始頁面 -->
+    <div id="fullPage">
+        <div id="startPage">
+            <div id="blurStyle"></div>
+            <div class="title"></div>
+            <div class="titleContent">
+                <div class="h1Title">
+                    <h1>Fruit Ninja</h1>
+                </div>
+                <div class="button">
+                    <input type="button" value="" id="startBtn">
+                    <label for="btn">
+                        <i class="fas fa-play playBtn"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 遊戲畫面 -->
+        <div id="container">
+            <div id="game">
+                <!-- header ----------------------------------------------->
+                <div id="header">
+                    <!-- 分數 -->
+                    <div class="score">
+                        <p style="font-size: 25px; font-family: 'Dokdo', cursive;">Score</p>
+                        <p><span class="text-score text">0</span></p>
+
+                    </div>
+                    <!-- 倒數 -->
+                    <div class="countdown">
+                        <p style="font-size: 25px; font-family: 'Dokdo', cursive;">Time Left</p>
+                        <p><span class="text-countdown text">30</span></p>
+                    </div>
+                </div>
+
+                <!-- main -------------------------------------------------->
+                <div id="main">
+                    <!-- 切水果的區域 -->
+                    <div class="fruitRegion"></div>
+                </div>
+
+                <!-- footer ------------------------------------------------>
+                <div id="footer">
+                    <!-- 暫停或開始鍵 -->
+                    <div class="pause">
+                        <label for="btn"><i class="fas fa-pause"></i></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>
